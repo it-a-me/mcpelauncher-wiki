@@ -1,4 +1,4 @@
-# Compiling the game launcher {#source_build_launcher}
+# Compiling the game launcher
 
 ## Prerequisites 
 

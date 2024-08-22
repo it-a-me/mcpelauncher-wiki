@@ -14,8 +14,7 @@
 -   **Fedora** -
     `sudo dnf install libuv-devel libzip-devel protobuf-devel protobuf-compiler qt5-qtbase-devel qt5-qtwebengine-devel qt5-qtdeclarative-devel qt5-qtsvg-devel qt5-qtquickcontrols qt5-qtquickcontrols2`
 -   **macOS** - `brew install cmake qt@5 libzip libuv protobuf`
--   `the game launcher <source_build_launcher>`{.interpreted-text
-    role="ref"}
+-   [The Game Launcher](./launcher.md)
 
 ## Build instructions
 

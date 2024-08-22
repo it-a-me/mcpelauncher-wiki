@@ -5,11 +5,11 @@ your session <https://stackoverflow.com/a/33087762>.
 
 You get the load address with
 <https://github.com/minecraft-linux/mcpelauncher-linker/blob/5127987ca49c4aeca6d180f26a9a4ac5aa4501c2/src/linker.cpp#L21>.
-Minecraft\'s load address is printed to the log as a hex number.
+Minecraft's load address is printed to the log as a hex number.
 
 ## Development Utilities
 
-Use readelf to list symbols of [libminecraftpe.so]{.title-ref}
+Use readelf to list symbols of `libminecraftpe.so`
 
 ``` bash
 readelf --wide -s libminecraftpe.so

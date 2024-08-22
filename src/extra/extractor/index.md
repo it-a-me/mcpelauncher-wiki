@@ -1,4 +1,4 @@
-# Extract utility {#extractor}
+# Extract utility
 
 The extract utility is a simple utility for extracting the game from an
 .apk file.

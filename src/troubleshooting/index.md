@@ -128,7 +128,7 @@ PipeWire: - **Ubuntu, Arch**: Make sure `pipewire-alsa` is installed. -
 `pipewire` package. - **Other distros**: Make sure to install the
 PipeWire ALSA plugin depending on your system configuration.
 
-### Updating the launcher {#updating_the_launcher}
+### Updating the launcher
 
 -   Linux AppImage or macOS to update the launcher on newer versions of
     the launcher, press the gear icon and then check for updates
@@ -139,15 +139,11 @@ need manually download a newer AppImage (Linux) or MacOS binary.
 
 ### MacOS X Catalina
 
-Should be solved by
-`updating the launcher <updating_the_launcher>`{.interpreted-text
-role="ref"}
+Should be solved by [Updating the Launcher](#updating-the-launcher)
 
 ### Google prevents login `This browser or app may not be secure. Try using a different browser`
 
-Should be solved by
-`updating the launcher <updating_the_launcher>`{.interpreted-text
-role="ref"}
+Should be solved by [Updating the Launcher](#updating-the-launcher)
 
 ### File picking doesn't work or crashes
 
@@ -164,8 +160,7 @@ The easiest way to download and start the game is through the graphical
 Qt UI (`mcpelauncher-ui-qt`, sometimes called metalauncher). This
 requires to log into a Google Play Account with Minecraft purchased.
 
-Otherwise, obtain a valid Minecraft x86 `.apk` file and use the
-`extract utility <extractor>`{.interpreted-text role="ref"}.
+Otherwise, obtain a valid Minecraft x86 `.apk` file and use the extract utility
 
 ### I used the Qt UI (metalauncher) to download the game, but `mcpelauncher-client` still doesn't work
 
@@ -227,10 +222,9 @@ beta first at
 use.**
 
 In some cases, you may need to
-`clear the launcher data <clearing_the_launcher_ui_data>`{.interpreted-text
-role="ref"}.
+clear the launcher data [clearing_the_launcher_ui_data](#clearing-the-launcher-ui-data).
 
-### Clearing the launcher UI data {#clearing_the_launcher_ui_data}
+### Clearing the launcher UI data
 
 Run the following commands:
 

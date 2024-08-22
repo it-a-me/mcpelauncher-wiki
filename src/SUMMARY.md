@@ -15,5 +15,12 @@ Edition). The launcher supports Linux and OS X.
     - [MSA](./source_build/msa.md)
     - [QT User Interface](./source_build/ui.md)
     - [Server -- DEPRECATED](./source_build/server.md)
-- [Extra](./external_links/index.md)
+- [Extra](./extra/index.md)
+    - [Extractor](./extra/extractor/index.md)
+    - [Server](./extra/server/index.md)
+    - [Debugging NDK Libraries](./extra/advanced/debugging_ndk_libraries/index.md)
+    - [Advanced](./extra/advanced/index.md)
+        - [JNI](./extra/advanced/jni/index.md)
+        - [NDK_Shims](./extra/advanced/ndk_shims/index.md)
+- [External Links](./external_links/index.md)
 

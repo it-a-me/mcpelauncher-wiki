@@ -1,5 +1,4 @@
 # Advanced
 
-::: {.toctree maxdepth="4" caption="Advanced:"}
-debugging_ndk_libraries/index jni/index ndk_shims/index
-:::
+- [JNI](./jni/index.md)
+- [NDK_Shims](./ndk_shims/index.md)
