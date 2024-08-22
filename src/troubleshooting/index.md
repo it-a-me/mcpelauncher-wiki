@@ -1,12 +1,5 @@
 # Troubleshooting
 
-::: contents
-
-local
-
-:   
-:::
-
 ## Extracting APKs
 
 ### I downloaded a Minecraft APK from the internet and it doesnt work!
@@ -29,7 +22,7 @@ Anyone caught asking this in the support server will face consequences.
 
 ### AppImage UI to large
 
-Scaling of qt5 in our AppImages is broken on some pc\'s. Here a
+Scaling of qt5 in our AppImages is broken on some pc's. Here a
 workaround
 
 ``` bash
@@ -37,7 +30,7 @@ QT_SCALE_FACTOR=1 QT_AUTO_SCREEN_SCALE_FACTOR=0 ./MC.AppImage
 ```
 
 Make shure to replace `./MC.AppImage` with the actual path to your
-AppImage file. On most systems you can drag\'n drop the AppImage from
+AppImage file. On most systems you can drag'n drop the AppImage from
 your file manager into the Terminal window to enter the full path.
 
 Source:
@@ -45,9 +38,9 @@ Source:
 
 ## Controller
 
-### The player\'s view drifts by itself when a controller is plugged in
+### The player's view drifts by itself when a controller is plugged in
 
-This happens when the controller\'s Deadzones are not set properly for
+This happens when the controller's Deadzones are not set properly for
 the game. You must manually set the deadzones for your controller.
 
 -   Linux:
@@ -57,7 +50,7 @@ the game. You must manually set the deadzones for your controller.
     while you are **ingame**.
 -   Mac OS X: TBA
 
-### The controller doesn\'t work at all or you want to remap your gamepad buttons, analogsticks, dpad and triggers?
+### The controller doesn't work at all or you want to remap your gamepad buttons, analogsticks, dpad and triggers?
 
 You need to create a gamepadmapping for your unknown gamepad.
 
@@ -69,7 +62,7 @@ You need to create a gamepadmapping for your unknown gamepad.
     `~/.var/app/io.mrarm.mcpelauncher/data/mcpelauncher/gamecontrollerdb.txt`
 -   macOS:
     `~/Library/Application Support/mcpelauncher/gamecontrollerdb.txt`
--   you have to create this text file, if it doesn\'t exist
+-   you have to create this text file, if it doesn't exist
 -   reopen the game
 
 **The launcher can detect this situation, but it has been disabled to
@@ -127,7 +120,7 @@ free item in the Marketplace.❗**
     installed on your system.
 -   **Other distros:** Make sure to install alsa (asound) and/or
     pulseaudio depending on your system configuration.
--   **macOS:** The macOS i386 launcher doesn\'t have a recent enough
+-   **macOS:** The macOS i386 launcher doesn't have a recent enough
     native libfmod.so file for Minecraft
 
 PipeWire: - **Ubuntu, Arch**: Make sure `pipewire-alsa` is installed. -
@@ -141,7 +134,7 @@ PipeWire ALSA plugin depending on your system configuration.
     the launcher, press the gear icon and then check for updates
 -   Flatpak `sudo flatpak update`
 
-If your launcher is too old or you can\'t find these buttons, you may
+If your launcher is too old or you can't find these buttons, you may
 need manually download a newer AppImage (Linux) or MacOS binary.
 
 ### MacOS X Catalina
@@ -156,15 +149,15 @@ Should be solved by
 `updating the launcher <updating_the_launcher>`{.interpreted-text
 role="ref"}
 
-### File picking doesn\'t work or crashes
+### File picking doesn't work or crashes
 
 You need to install the `zenity` utility:
 
 -   Debian/Ubuntu - `sudo apt-get install zenity`
 
-### I compiled and/or installed everything, but Minecraft doesn\'t start
+### I compiled and/or installed everything, but Minecraft doesn't start
 
-Chances are, you don\'t have the actual game yet. This project does
+Chances are, you don't have the actual game yet. This project does
 **not** provide MCPE/Minecraft Bedrock Edition itself.
 
 The easiest way to download and start the game is through the graphical
@@ -174,7 +167,7 @@ requires to log into a Google Play Account with Minecraft purchased.
 Otherwise, obtain a valid Minecraft x86 `.apk` file and use the
 `extract utility <extractor>`{.interpreted-text role="ref"}.
 
-### I used the Qt UI (metalauncher) to download the game, but `mcpelauncher-client` still doesn\'t work
+### I used the Qt UI (metalauncher) to download the game, but `mcpelauncher-client` still doesn't work
 
 To start a given version of Minecraft you can run `mcpelauncher-client`
 with the `-dg` argument, eg.
@@ -221,16 +214,16 @@ installed in your system.
 ### The launcher crashes when I press Download and Play
 
 First of all, make sure a version name is displayed under the Download
-and Play button. If it\'s not, please wait some time and/or try
+and Play button. If it's not, please wait some time and/or try
 restarting the launcher. A window asking you to accept Google Play TOS
 should appear first.
 
-If the launcher still fails to download, it\'s possible you are trying
+If the launcher still fails to download, it's possible you are trying
 to download a beta version of the game. Make sure to register in the
 beta first at
 <https://play.google.com/apps/testing/com.mojang.minecraftpe>.
 
-**You must have purchased Minecraft on the account you\'re trying to
+**You must have purchased Minecraft on the account you're trying to
 use.**
 
 In some cases, you may need to
@@ -250,7 +243,7 @@ rm -rf ~/.cache/Minecraft\ Linux\ Launcher
 ### Obtaining the game log
 
 In order to be able to view the game log, in the launcher press the gear
-in the top right corner and check the \"Show log when starting the
-game\" option. This will show a log and update it in realtime. You can
+in the top right corner and check the "Show log when starting the
+game" option. This will show a log and update it in realtime. You can
 copy it by pressing the icon in the top-right corner of the log window.
 Additionally, the log will be shown if the game crashes.
