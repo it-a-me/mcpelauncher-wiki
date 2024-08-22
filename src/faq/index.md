@@ -9,17 +9,17 @@ the game as well, althought not offically supported by Google Play.
 
 ### The launcher **cannot** download the game from:
 
--   The Amazon App store, althought may or may not work on arm devices.
-    You have to extract the apk from an amazon device.
+- The Amazon App store, althought may or may not work on arm devices.
+  You have to extract the apk from an amazon device.
 
 ### The launcher **cannot** download and **cannot** launch the game from:
 
 This would require a completly different Launcher, if that would even
 possible
 
--   The Apple iOS App store
--   The Microsoft Store, previously by redeeming a gift code for
-    Minecraft: Windows 10 Edition
+- The Apple iOS App store
+- The Microsoft Store, previously by redeeming a gift code for
+  Minecraft: Windows 10 Edition
 
 ## Does it work on Windows 7 / 8?
 
@@ -37,7 +37,7 @@ The project runs the native libraries from the Android version directly
 on your computer. This is accomplished by fixing the incompatibilities
 between the libc used on Android and the one used on desktop Linux or OS
 X (Android - Bionic; Linux - glibc). This is a simple compatibility
-layer which doesn\'t impact performance in any significant way; it\'s
+layer which doesn't impact performance in any significant way; it's
 similar to Wine, but much more lightweight and simple. Aditionally, all
 Android-specific code has been rewritten to run on Linux (AppPlatform,
 Store, Xbox Live, etc.).

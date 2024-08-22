@@ -16,14 +16,14 @@ void shim::add_common_shimmed_symbols(std::vector<shim::shimmed_symbol> &list) {
 }
 ```
 
--   `"__errno"` is the name of the libc symbol
--   `bionic::get_errno` is a function or global pointer with the same
-    type and calling convention as the ndk provided function. Linux
-    armhf has a different calling convention than android armeabi-v7a,
-    you have to wrap all functions with floating point arguments or
-    return values, use `ARMHFREWRITE(bionic::get_errno)` to
-    automatically wrap it in c++. Windows uses different calling
-    conventions than linux, macOS and Android.
+- `"__errno"` is the name of the libc symbol
+- `bionic::get_errno` is a function or global pointer with the same type
+  and calling convention as the ndk provided function. Linux armhf has a
+  different calling convention than android armeabi-v7a, you have to
+  wrap all functions with floating point arguments or return values, use
+  `ARMHFREWRITE(bionic::get_errno)` to automatically wrap it in c++.
+  Windows uses different calling conventions than linux, macOS and
+  Android.
 
 ## Loading a stub library with mcpelauncher-linker
 
@@ -38,11 +38,11 @@ syms["__errno"] = (void*) bionic::get_errno;
 linker::load_library("stub.so", syms);
 ```
 
--   `"__errno"` is the name of the symbol
--   `bionic::get_errno` is a function or global pointer with the same
-    type and calling convention as the ndk provided function. Linux
-    armhf has a different calling convention than android armeabi-v7a,
-    you have to wrap all functions with floating point arguments or
-    return values, use `ARMHFREWRITE(bionic::get_errno)` to
-    automatically wrap it in c++. Windows uses different calling
-    conventions than linux, macOS and Android.
+- `"__errno"` is the name of the symbol
+- `bionic::get_errno` is a function or global pointer with the same type
+  and calling convention as the ndk provided function. Linux armhf has a
+  different calling convention than android armeabi-v7a, you have to
+  wrap all functions with floating point arguments or return values, use
+  `ARMHFREWRITE(bionic::get_errno)` to automatically wrap it in c++.
+  Windows uses different calling conventions than linux, macOS and
+  Android.

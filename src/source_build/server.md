@@ -2,17 +2,16 @@
 
 ## Prerequisites
 
--   **Ubuntu** - `sudo apt-get install git cmake pkg-config`
--   **Fedora** -
-    `sudo dnf install git make cmake pkg-config gcc-c++ libstdc++.i686 glibc-devel.i686`
--   **macOS** - `brew install cmake`
+- **Ubuntu** - `sudo apt-get install git cmake pkg-config`
+- **Fedora** -
+  `sudo dnf install git make cmake pkg-config gcc-c++ libstdc++.i686 glibc-devel.i686`
+- **macOS** - `brew install cmake`
 
 ## Requirements
 
--   **Ubuntu** - you\'ll need to `sudo dpkg --add-architecture i386`,
-    then install the required packages:
-    `sudo apt-get install g++-multilib`
--   **macOS** - none
+- **Ubuntu** - you'll need to `sudo dpkg --add-architecture i386`, then
+  install the required packages: `sudo apt-get install g++-multilib`
+- **macOS** - none
 
 ## Build instructions
 

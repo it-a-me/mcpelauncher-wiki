@@ -43,27 +43,27 @@ Source:
 This happens when the controller's Deadzones are not set properly for
 the game. You must manually set the deadzones for your controller.
 
--   Linux:
-    <https://wiki.archlinux.org/index.php/Gamepad#evdev_API_deadzones>
-    or if you have an Xbox360 Controller, open a terminal and run
-    `sudo xboxdrv --detach-kernel-driver --deadzone 6000 --silent --type xbox360 --mimic-xpad`
-    while you are **ingame**.
--   Mac OS X: TBA
+- Linux:
+  <https://wiki.archlinux.org/index.php/Gamepad#evdev_API_deadzones> or
+  if you have an Xbox360 Controller, open a terminal and run
+  `sudo xboxdrv --detach-kernel-driver --deadzone 6000 --silent --type xbox360 --mimic-xpad`
+  while you are **ingame**.
+- Mac OS X: TBA
 
 ### The controller doesn't work at all or you want to remap your gamepad buttons, analogsticks, dpad and triggers?
 
 You need to create a gamepadmapping for your unknown gamepad.
 
--   Download <https://generalarcade.com/gamepadtool/>
--   create a mapping with it
--   copy the new mapping line into
--   AppImage: `~/.local/share/mcpelauncher/gamecontrollerdb.txt`
--   Flatpak:
-    `~/.var/app/io.mrarm.mcpelauncher/data/mcpelauncher/gamecontrollerdb.txt`
--   macOS:
-    `~/Library/Application Support/mcpelauncher/gamecontrollerdb.txt`
--   you have to create this text file, if it doesn't exist
--   reopen the game
+- Download <https://generalarcade.com/gamepadtool/>
+- create a mapping with it
+- copy the new mapping line into
+- AppImage: `~/.local/share/mcpelauncher/gamecontrollerdb.txt`
+- Flatpak:
+  `~/.var/app/io.mrarm.mcpelauncher/data/mcpelauncher/gamecontrollerdb.txt`
+- macOS:
+  `~/Library/Application Support/mcpelauncher/gamecontrollerdb.txt`
+- you have to create this text file, if it doesn't exist
+- reopen the game
 
 **The launcher can detect this situation, but it has been disabled to
 notify the user, because peoples mice, keyboards etc. were detected as
@@ -86,14 +86,14 @@ redirected here by a link in the launcher this is the case.
 You should make sure to install the proper 32-bit graphic drivers for
 your hardware.
 
--   For integrated graphics and most AMD GPUs (and maybe Nvidia on
-    nouveau) -
-    `sudo apt-get install libegl1-mesa:i386 libegl1-mesa-drivers:i386`
--   For some Nvidia cards (eg. GeForce series), assuming proprietary
-    driver is already installed, install the associated libnvidia-gl-xxx
-    package (where xxx = driver version for your hardware). For example,
-    if the nvidia-driver-390 metapackage is installed, then
-    `sudo apt-get install libnvidia-gl-390`.
+- For integrated graphics and most AMD GPUs (and maybe Nvidia on
+  nouveau) -
+  `sudo apt-get install libegl1-mesa:i386 libegl1-mesa-drivers:i386`
+- For some Nvidia cards (eg. GeForce series), assuming proprietary
+  driver is already installed, install the associated libnvidia-gl-xxx
+  package (where xxx = driver version for your hardware). For example,
+  if the nvidia-driver-390 metapackage is installed, then
+  `sudo apt-get install libnvidia-gl-390`.
 
 You may need to reinstall the proprietary drivers if you had installed
 them manually before.
@@ -114,14 +114,14 @@ the MSA component.
 **❗Please note that the in-game Music is downloaded separately as a
 free item in the Marketplace.❗**
 
--   **Ubuntu:** Make sure `libasound2:i386` is installed. If it is, you
-    may need to install `libpulse0:i386`.
--   **Arch:** Make sure `lib32-libpulse` and `lib32-alsa-plugins` are
-    installed on your system.
--   **Other distros:** Make sure to install alsa (asound) and/or
-    pulseaudio depending on your system configuration.
--   **macOS:** The macOS i386 launcher doesn't have a recent enough
-    native libfmod.so file for Minecraft
+- **Ubuntu:** Make sure `libasound2:i386` is installed. If it is, you
+  may need to install `libpulse0:i386`.
+- **Arch:** Make sure `lib32-libpulse` and `lib32-alsa-plugins` are
+  installed on your system.
+- **Other distros:** Make sure to install alsa (asound) and/or
+  pulseaudio depending on your system configuration.
+- **macOS:** The macOS i386 launcher doesn't have a recent enough native
+  libfmod.so file for Minecraft
 
 PipeWire: - **Ubuntu, Arch**: Make sure `pipewire-alsa` is installed. -
 **Gentoo**: Make sure the `pipewire-alsa` USE flag is set for the
@@ -130,9 +130,9 @@ PipeWire ALSA plugin depending on your system configuration.
 
 ### Updating the launcher
 
--   Linux AppImage or macOS to update the launcher on newer versions of
-    the launcher, press the gear icon and then check for updates
--   Flatpak `sudo flatpak update`
+- Linux AppImage or macOS to update the launcher on newer versions of
+  the launcher, press the gear icon and then check for updates
+- Flatpak `sudo flatpak update`
 
 If your launcher is too old or you can't find these buttons, you may
 need manually download a newer AppImage (Linux) or MacOS binary.
@@ -149,7 +149,7 @@ Should be solved by [Updating the Launcher](#updating-the-launcher)
 
 You need to install the `zenity` utility:
 
--   Debian/Ubuntu - `sudo apt-get install zenity`
+- Debian/Ubuntu - `sudo apt-get install zenity`
 
 ### I compiled and/or installed everything, but Minecraft doesn't start
 
@@ -160,7 +160,8 @@ The easiest way to download and start the game is through the graphical
 Qt UI (`mcpelauncher-ui-qt`, sometimes called metalauncher). This
 requires to log into a Google Play Account with Minecraft purchased.
 
-Otherwise, obtain a valid Minecraft x86 `.apk` file and use the extract utility
+Otherwise, obtain a valid Minecraft x86 `.apk` file and use the extract
+utility
 
 ### I used the Qt UI (metalauncher) to download the game, but `mcpelauncher-client` still doesn't work
 
@@ -178,14 +179,14 @@ do this, open a terminal and run the following:
 
 Linux:
 
--   `mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/1.2.3.4` -
-    Replace 1.2.3.4 with the version of Minecraft you want to run.
+- `mcpelauncher-client -dg ~/.local/share/mcpelauncher/versions/1.2.3.4` -
+  Replace 1.2.3.4 with the version of Minecraft you want to run.
 
 Mac OS X:
 
--   `cd /Applications/Minecraft\ Bedrock\ Launcher.app/Contents/MacOS`
--   `./mcpelauncher-client -dg ~/Library/Application\ Support/mcpelauncher/versions/1.2.3.4` -
-    Replace 1.2.3.4 with the version of Minecraft you want to run.
+- `cd /Applications/Minecraft\ Bedrock\ Launcher.app/Contents/MacOS`
+- `./mcpelauncher-client -dg ~/Library/Application\ Support/mcpelauncher/versions/1.2.3.4` -
+  Replace 1.2.3.4 with the version of Minecraft you want to run.
 
 ## Qt launcher UI
 
@@ -213,16 +214,15 @@ and Play button. If it's not, please wait some time and/or try
 restarting the launcher. A window asking you to accept Google Play TOS
 should appear first.
 
-If the launcher still fails to download, it's possible you are trying
-to download a beta version of the game. Make sure to register in the
-beta first at
-<https://play.google.com/apps/testing/com.mojang.minecraftpe>.
+If the launcher still fails to download, it's possible you are trying to
+download a beta version of the game. Make sure to register in the beta
+first at <https://play.google.com/apps/testing/com.mojang.minecraftpe>.
 
 **You must have purchased Minecraft on the account you're trying to
 use.**
 
-In some cases, you may need to
-clear the launcher data [clearing_the_launcher_ui_data](#clearing-the-launcher-ui-data).
+In some cases, you may need to clear the launcher data
+[clearing_the_launcher_ui_data](#clearing-the-launcher-ui-data).
 
 ### Clearing the launcher UI data
 
@@ -237,7 +237,7 @@ rm -rf ~/.cache/Minecraft\ Linux\ Launcher
 ### Obtaining the game log
 
 In order to be able to view the game log, in the launcher press the gear
-in the top right corner and check the "Show log when starting the
-game" option. This will show a log and update it in realtime. You can
-copy it by pressing the icon in the top-right corner of the log window.
+in the top right corner and check the "Show log when starting the game"
+option. This will show a log and update it in realtime. You can copy it
+by pressing the icon in the top-right corner of the log window.
 Additionally, the log will be shown if the game crashes.
