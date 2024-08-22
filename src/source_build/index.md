@@ -8,8 +8,8 @@ to solve the majority of problems encountered when running the launcher
 
 ## Table of Contents
 
-- [intro.md](./intro.md)
-- [launcher.md](./launcher.md)
-- [msa.md](./msa.md)
-- [server.md](./server.md)
-- [ui.md](./ui.md)
+- [Introduction](./intro.md)
+- [Game Launcher](./launcher.md)
+- [MSA](./msa.md)
+- [QT User Interface](./ui.md)
+- [Server -- DEPRECATED](./server.md)
